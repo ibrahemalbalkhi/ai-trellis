@@ -26,7 +26,7 @@ export default function BookingSection() {
             جاهز تبدأ؟
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 leading-relaxed" style={{ color: '#111827' }}>
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 leading-relaxed" style={{ color: '#000000' }}>
             احجز 30 دقيقة مجاناً. راح نفهم احتياجاتك ونقترح الحلول المناسبة
           </p>
 
@@ -34,10 +34,10 @@ export default function BookingSection() {
           <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg mb-8 border-2 border-dashed border-neutral-light">
             <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[350px] lg:h-96">
               <div className="text-5xl sm:text-6xl mb-4 sm:mb-6 opacity-30">📅</div>
-              <p className="text-lg sm:text-xl font-medium mb-2" style={{ color: '#111827' }}>
+              <p className="text-lg sm:text-xl font-medium mb-2" style={{ color: '#000000' }}>
                 مساحة حجز التقويم
               </p>
-              <p className="text-sm sm:text-base text-center max-w-md" style={{ color: '#1F2937' }}>
+              <p className="text-sm sm:text-base text-center max-w-md" style={{ color: '#000000' }}>
                 {/* Calendly أو أي نظام حجز آخر يتم إضافته هنا */}
                 سيتم إضافة أداة الحجز (Calendly أو غيرها) في هذا المكان
               </p>
@@ -46,7 +46,7 @@ export default function BookingSection() {
 
           {/* Alternative Contact */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-            <p className="text-base sm:text-lg" style={{ color: '#111827' }}>
+            <p className="text-base sm:text-lg" style={{ color: '#000000' }}>
               أو تواصل معنا مباشرة:
             </p>
             <button

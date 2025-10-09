@@ -49,7 +49,7 @@ export default function CaseStudiesSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             نتائج حقيقية، مش وعود
           </h2>
-          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto" style={{ color: '#111827' }}>
+          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto" style={{ color: '#000000' }}>
             شركات سعودية حققت نتائج ملموسة معنا
           </p>
         </motion.div>
@@ -75,7 +75,7 @@ export default function CaseStudiesSection() {
 
                 {/* Challenge */}
                 <div className="mb-6">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-2" style={{ color: '#1F2937' }}>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-2" style={{ color: '#000000' }}>
                     التحدي
                   </h3>
                   <p className="text-lg font-semibold text-neutral-black">
@@ -85,10 +85,10 @@ export default function CaseStudiesSection() {
 
                 {/* Solution */}
                 <div className="mb-6">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-2" style={{ color: '#1F2937' }}>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-2" style={{ color: '#000000' }}>
                     الحل
                   </h3>
-                  <p className="text-base leading-relaxed" style={{ color: '#111827' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#000000' }}>
                     {study.solution}
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export default function CaseStudiesSection() {
 
                 {/* Results */}
                 <div>
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-4" style={{ color: '#1F2937' }}>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-4" style={{ color: '#000000' }}>
                     النتائج
                   </h3>
                   <div className="space-y-3">
@@ -107,7 +107,7 @@ export default function CaseStudiesSection() {
                         key={idx}
                         className="flex items-center justify-between"
                       >
-                        <span className="text-sm" style={{ color: '#111827' }}>
+                        <span className="text-sm" style={{ color: '#000000' }}>
                           {result.label}
                         </span>
                         <span
@@ -140,7 +140,7 @@ export default function CaseStudiesSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <p className="text-base sm:text-lg" style={{ color: '#111827' }}>
+          <p className="text-base sm:text-lg" style={{ color: '#000000' }}>
             هل تريد نتائج مثل هذه لشركتك؟
           </p>
         </motion.div>

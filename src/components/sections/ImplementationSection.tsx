@@ -31,7 +31,7 @@ export default function ImplementationSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             ما نستشير بس، احنا ننفذ
           </h2>
-          <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto" style={{ color: '#111827' }}>
+          <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto" style={{ color: '#000000' }}>
             الفرق بيننا وبين الاستشاريين التقليديين
           </p>
         </motion.div>
@@ -58,7 +58,7 @@ export default function ImplementationSection() {
                   <div
                     key={index}
                     className="flex items-center gap-3"
-                    style={{ color: '#111827' }}
+                    style={{ color: '#000000' }}
                   >
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center">
                       <X size={16} className="text-red-500" />
@@ -70,7 +70,7 @@ export default function ImplementationSection() {
 
               {/* Bottom note */}
               <div className="mt-6 pt-6 border-t border-neutral-light">
-                <p className="text-sm italic" style={{ color: '#1F2937' }}>
+                <p className="text-sm italic" style={{ color: '#000000' }}>
                   &quot;نعطيك خطة، وأنت تنفذها بنفسك&quot;
                 </p>
               </div>

@@ -25,7 +25,7 @@ export default function ServicesGrid() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             خدماتنا: 71 حل بالذكاء الاصطناعي
           </h2>
-          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto" style={{ color: '#111827' }}>
+          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto" style={{ color: '#000000' }}>
             اضغط على أي حزمة لاستكشاف الخدمات المتاحة
           </p>
         </motion.div>
@@ -84,13 +84,13 @@ export default function ServicesGrid() {
                 </h3>
 
                 {/* Service Count */}
-                <p className="text-sm sm:text-base text-center font-medium" style={{ color: '#111827' }}>
+                <p className="text-sm sm:text-base text-center font-medium" style={{ color: '#000000' }}>
                   {bundle.servicesCount} خدمة
                 </p>
 
                 {/* Expand indicator */}
                 {!expandedBundle && (
-                  <p className="text-center text-sm mt-3 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#1F2937' }}>
+                  <p className="text-center text-sm mt-3 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#000000' }}>
                     اضغط للعرض
                   </p>
                 )}
@@ -134,7 +134,7 @@ export default function ServicesGrid() {
                             >
                               {bundle.nameAr}
                             </h3>
-                            <p className="text-sm sm:text-base" style={{ color: '#111827' }}>
+                            <p className="text-sm sm:text-base" style={{ color: '#000000' }}>
                               {bundle.servicesCount} خدمة متاحة
                             </p>
                           </div>
@@ -163,7 +163,7 @@ export default function ServicesGrid() {
                                 <h4 className="font-bold text-neutral-black mb-1">
                                   {service.nameAr}
                                 </h4>
-                                <p className="text-sm" style={{ color: '#374151' }}>
+                                <p className="text-sm" style={{ color: '#000000' }}>
                                   {service.categoryAr}
                                 </p>
                               </div>
