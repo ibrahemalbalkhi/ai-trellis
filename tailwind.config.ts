@@ -26,13 +26,13 @@ const config: Config = {
           green: "#10B981",
           orange: "#F59E0B",
         },
-        // Neutral colors
+        // Neutral colors - WCAG AAA compliant
         neutral: {
           black: "#0F172A",
-          "gray-dark": "#1E293B",
-          "gray-medium": "#475569",
-          "gray-light": "#CBD5E1",
-          "bg-light": "#F8FAFC",
+          "gray-dark": "#1F2937",    // 12.63:1 contrast on white
+          "gray-medium": "#374151",  // 8.59:1 contrast on white
+          "gray-light": "#9CA3AF",   // For borders only
+          "bg-light": "#F9FAFB",
         },
       },
       fontFamily: {

@@ -60,9 +60,15 @@ export default function Header() {
               width={48}
               height={48}
               priority
-              className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 object-contain"
+              className={cn(
+                "h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 object-contain transition-all duration-300",
+                !isScrolled && "brightness-0 invert"
+              )}
             />
-            <span className="text-lg sm:text-xl lg:text-2xl font-bold text-neutral-black">
+            <span className={cn(
+              "text-lg sm:text-xl lg:text-2xl font-bold transition-colors duration-300",
+              isScrolled ? "text-neutral-black" : "text-white"
+            )}>
               AI Trellis
             </span>
           </div>
