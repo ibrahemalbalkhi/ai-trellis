@@ -1,0 +1,32 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- AI Trellis Logo - Modern, Tech-focused -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon: Abstract AI network/trellis -->
+  <g id="icon">
+    <!-- Central node -->
+    <circle cx="20" cy="30" r="4" fill="url(#logoGradient)"/>
+
+    <!-- Network connections -->
+    <line x1="20" y1="30" x2="10" y2="15" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="30" x2="30" y2="15" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="30" x2="10" y2="45" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="30" x2="30" y2="45" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Outer nodes -->
+    <circle cx="10" cy="15" r="2.5" fill="#7C3AED"/>
+    <circle cx="30" cy="15" r="2.5" fill="#7C3AED"/>
+    <circle cx="10" cy="45" r="2.5" fill="#7C3AED"/>
+    <circle cx="30" cy="45" r="2.5" fill="#7C3AED"/>
+  </g>
+
+  <!-- Text: AI Trellis -->
+  <text x="50" y="38" font-family="Cairo, sans-serif" font-size="24" font-weight="700" fill="#0F172A">
+    AI Trellis
+  </text>
+</svg>

@@ -1,0 +1,6 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- GO-TO-MARKET: Rocket/Launch icon -->
+  <path d="M24 4L32 16L44 20L32 24L24 36L16 24L4 20L16 16L24 4Z" fill="#3B82F6" opacity="0.2"/>
+  <path d="M24 4L32 16L44 20L32 24L24 36L16 24L4 20L16 16L24 4Z" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="24" cy="20" r="3" fill="#3B82F6"/>
+</svg>

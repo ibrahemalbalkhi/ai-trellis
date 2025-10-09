@@ -1,0 +1,8 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- CRM & AUTOMATION: Gear/Settings icon with people -->
+  <circle cx="24" cy="24" r="16" fill="#5B21B6" opacity="0.2"/>
+  <circle cx="24" cy="24" r="10" stroke="#5B21B6" stroke-width="2"/>
+  <path d="M24 14V18M24 30V34M34 24H30M18 24H14M30.9 17.1L28.1 19.9M19.9 28.1L17.1 30.9M30.9 30.9L28.1 28.1M19.9 19.9L17.1 17.1"
+        stroke="#5B21B6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="4" fill="#5B21B6"/>
+</svg>
