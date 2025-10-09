@@ -70,7 +70,7 @@ export default function ImplementationSection() {
               {/* Bottom note */}
               <div className="mt-6 pt-6 border-t border-neutral-gray-light">
                 <p className="text-sm text-neutral-gray-medium italic">
-                  "نعطيك خطة، وأنت تنفذها بنفسك"
+                  &quot;نعطيك خطة، وأنت تنفذها بنفسك&quot;
                 </p>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function ImplementationSection() {
               {/* Bottom note */}
               <div className="mt-6 pt-6 border-t border-primary/20">
                 <p className="text-sm font-bold text-primary">
-                  "نبني لك الحل، ندرب فريقك، ونتابع معك للنجاح"
+                  &quot;نبني لك الحل، ندرب فريقك، ونتابع معك للنجاح&quot;
                 </p>
               </div>
             </div>
