@@ -28,22 +28,22 @@ const steps = [
 
 export default function HowWeWorkSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white relative overflow-hidden">
       {/* Background decorative element */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 lg:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-black mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             ما نكتفي بالكلام
           </h2>
-          <p className="text-xl text-neutral-gray-dark max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-dark max-w-2xl mx-auto">
             نبني، ننفذ، ونتابع. هذي طريقة شغلنا
           </p>
         </motion.div>
@@ -59,31 +59,31 @@ export default function HowWeWorkSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="flex items-start gap-6 mb-12 last:mb-0">
+              <div className="flex items-start gap-4 sm:gap-6 mb-8 sm:mb-12 last:mb-0">
                 {/* Number circle */}
                 <div className="flex-shrink-0">
                   <div
-                    className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary
+                    className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary
                                flex items-center justify-center shadow-lg"
                   >
-                    <span className="text-white font-black text-xl">
+                    <span className="text-white font-black text-lg sm:text-xl">
                       {step.number}
                     </span>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-gradient-to-br from-neutral-bg-light to-white rounded-2xl p-6 sm:p-8 border border-neutral-gray-light/50">
-                  <div className="flex items-start justify-between gap-4 mb-3">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-neutral-black">
+                <div className="flex-1 bg-gradient-to-br from-neutral-bg-light to-white rounded-2xl p-4 sm:p-6 lg:p-8 border border-neutral-gray-light/50">
+                  <div className="flex items-start justify-between gap-4 mb-2 sm:mb-3">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-neutral-black">
                       {step.title}
                     </h3>
                     <CheckCircle2
                       className="text-accent-green flex-shrink-0"
-                      size={28}
+                      size={24}
                     />
                   </div>
-                  <p className="text-lg text-neutral-gray-dark leading-relaxed">
+                  <p className="text-base sm:text-lg text-neutral-gray-dark leading-relaxed">
                     {step.description}
                   </p>
                 </div>

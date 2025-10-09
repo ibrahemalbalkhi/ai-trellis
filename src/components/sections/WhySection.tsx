@@ -25,10 +25,10 @@ const whyPoints = [
 
 export default function WhySection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-neutral-bg-light">
+    <section className="py-12 sm:py-20 lg:py-24 bg-neutral-bg-light">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
-          className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-black mb-12 sm:mb-16 text-center"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-8 sm:mb-12 lg:mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -38,11 +38,11 @@ export default function WhySection() {
         </motion.h2>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {whyPoints.map((point, index) => (
             <motion.div
               key={index}
-              className={`relative p-8 rounded-3xl bg-gradient-to-br ${point.gradient}
+              className={`relative p-6 sm:p-8 rounded-3xl bg-gradient-to-br ${point.gradient}
                          text-white overflow-hidden group cursor-pointer
                          border border-white/20 shadow-lg hover:shadow-2xl
                          transition-all duration-300`}
@@ -63,10 +63,10 @@ export default function WhySection() {
 
               {/* Content */}
               <div className="relative z-10">
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">
                   {point.title}
                 </h3>
-                <p className="text-white/90 text-lg leading-relaxed">
+                <p className="text-white/90 text-base sm:text-lg leading-relaxed">
                   {point.description}
                 </p>
               </div>

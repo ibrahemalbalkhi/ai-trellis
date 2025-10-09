@@ -20,24 +20,24 @@ const comparison = {
 
 export default function ImplementationSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-white">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 lg:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-black mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             ما نستشير بس، احنا ننفذ
           </h2>
-          <p className="text-xl text-neutral-gray-dark max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-dark max-w-3xl mx-auto">
             الفرق بيننا وبين الاستشاريين التقليديين
           </p>
         </motion.div>
 
         {/* Comparison cards */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {/* Left: Traditional Consulting */}
           <motion.div
             className="relative"
@@ -46,7 +46,7 @@ export default function ImplementationSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="bg-neutral-bg-light rounded-3xl p-8 border-2 border-neutral-gray-light relative">
+            <div className="bg-neutral-bg-light rounded-3xl p-6 sm:p-8 border-2 border-neutral-gray-light relative">
               {/* Label */}
               <div className="absolute -top-4 right-8 bg-neutral-gray-medium text-white px-4 py-2 rounded-full text-sm font-bold">
                 الاستشاريون التقليديون
@@ -84,7 +84,7 @@ export default function ImplementationSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 border-2 border-primary/30 relative">
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-6 sm:p-8 border-2 border-primary/30 relative">
               {/* Label */}
               <div className="absolute -top-4 right-8 bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                 AI Trellis
@@ -126,14 +126,14 @@ export default function ImplementationSection() {
 
         {/* Bottom CTA */}
         <motion.div
-          className="text-center mt-16"
+          className="text-center mt-8 sm:mt-12 lg:mt-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
         >
-          <div className="inline-block bg-gradient-to-br from-neutral-bg-light to-white rounded-2xl px-8 py-6 border border-neutral-gray-light shadow-lg">
-            <p className="text-lg font-semibold text-neutral-black">
+          <div className="inline-block bg-gradient-to-br from-neutral-bg-light to-white rounded-2xl px-6 sm:px-8 py-4 sm:py-6 border border-neutral-gray-light shadow-lg">
+            <p className="text-base sm:text-lg font-semibold text-neutral-black">
               ما نعطيك تقرير وننساك. نشتغل معك لين تحقق النتائج
             </p>
           </div>

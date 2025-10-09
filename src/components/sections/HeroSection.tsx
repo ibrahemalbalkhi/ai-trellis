@@ -86,7 +86,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -97,7 +97,7 @@ export default function HeroSection() {
         </motion.h1>
 
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto font-medium leading-relaxed"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-10 max-w-3xl mx-auto font-medium leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -108,7 +108,7 @@ export default function HeroSection() {
 
         <motion.button
           onClick={scrollToBooking}
-          className="px-8 py-4 bg-white text-primary-dark font-bold text-lg rounded-full
+          className="px-6 py-3 sm:px-8 sm:py-4 bg-white text-primary-dark font-bold text-base sm:text-lg rounded-full
                      shadow-2xl hover:shadow-accent-green/50 hover:scale-105
                      transition-all duration-300 focus:outline-none focus:ring-2
                      focus:ring-white focus:ring-offset-4 focus:ring-offset-primary-dark"

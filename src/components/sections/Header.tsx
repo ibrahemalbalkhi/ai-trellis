@@ -37,32 +37,32 @@ export default function Header() {
       transition={{ duration: 0.3 }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* CTA Button - Right side in RTL */}
           <button
             onClick={scrollToBooking}
             className={cn(
-              "px-6 py-2.5 rounded-full font-semibold text-sm sm:text-base transition-all duration-200",
+              "px-4 py-2 sm:px-6 sm:py-2.5 rounded-full font-semibold text-xs sm:text-sm lg:text-base transition-all duration-200",
               "bg-gradient-to-br from-primary to-secondary-dark text-white",
               "hover:shadow-lg hover:scale-105 active:scale-95",
               "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             )}
             aria-label="احجز استشارة مجانية"
           >
-            احجز استشارة مجانية
+            احجز استشارة
           </button>
 
           {/* Logo - Left side in RTL */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <Image
               src="/images/logo.png"
               alt="AI Trellis"
               width={48}
               height={48}
               priority
-              className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+              className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 object-contain"
             />
-            <span className="text-xl sm:text-2xl font-bold text-neutral-black">
+            <span className="text-lg sm:text-xl lg:text-2xl font-bold text-neutral-black">
               AI Trellis
             </span>
           </div>

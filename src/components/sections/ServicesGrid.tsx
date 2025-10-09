@@ -14,24 +14,24 @@ export default function ServicesGrid() {
   };
 
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-white" id="services">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white" id="services">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-12 sm:mb-16"
+          className="text-center mb-8 sm:mb-12 lg:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-black mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             خدماتنا: 71 حل بالذكاء الاصطناعي
           </h2>
-          <p className="text-lg sm:text-xl text-neutral-gray-medium max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-medium max-w-2xl mx-auto">
             اضغط على أي حزمة لاستكشاف الخدمات المتاحة
           </p>
         </motion.div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {servicesData.bundles.map((bundle, index) => (
             <motion.div
               key={bundle.id}
@@ -43,7 +43,7 @@ export default function ServicesGrid() {
             >
               {/* Bundle Card */}
               <motion.div
-                className={`relative p-6 sm:p-8 rounded-2xl cursor-pointer
+                className={`relative p-5 sm:p-6 lg:p-8 rounded-2xl cursor-pointer
                            border-2 transition-all duration-300
                            ${
                              expandedBundle === bundle.id
@@ -77,14 +77,14 @@ export default function ServicesGrid() {
 
                 {/* Bundle Name */}
                 <h3
-                  className="text-xl sm:text-2xl font-bold text-center mb-2"
+                  className="text-lg sm:text-xl lg:text-2xl font-bold text-center mb-2"
                   style={{ color: bundle.color }}
                 >
                   {bundle.nameAr}
                 </h3>
 
                 {/* Service Count */}
-                <p className="text-center text-neutral-gray-medium font-medium">
+                <p className="text-sm sm:text-base text-center text-neutral-gray-medium font-medium">
                   {bundle.servicesCount} خدمة
                 </p>
 
@@ -107,14 +107,14 @@ export default function ServicesGrid() {
                     onClick={() => setExpandedBundle(null)}
                   >
                     <motion.div
-                      className="bg-white rounded-3xl p-6 sm:p-8 max-w-3xl w-full max-h-[80vh] overflow-y-auto"
+                      className="bg-white rounded-3xl p-5 sm:p-6 lg:p-8 max-w-3xl w-full max-h-[85vh] overflow-y-auto"
                       initial={{ scale: 0.9, y: 50 }}
                       animate={{ scale: 1, y: 0 }}
                       exit={{ scale: 0.9, y: 50 }}
                       onClick={(e) => e.stopPropagation()}
                     >
                       {/* Header */}
-                      <div className="flex items-start justify-between mb-6">
+                      <div className="flex items-start justify-between mb-5 sm:mb-6">
                         <div className="flex items-center gap-4">
                           <div
                             className="p-3 rounded-xl"
@@ -129,12 +129,12 @@ export default function ServicesGrid() {
                           </div>
                           <div>
                             <h3
-                              className="text-2xl sm:text-3xl font-bold"
+                              className="text-xl sm:text-2xl lg:text-3xl font-bold"
                               style={{ color: bundle.color }}
                             >
                               {bundle.nameAr}
                             </h3>
-                            <p className="text-neutral-gray-medium">
+                            <p className="text-sm sm:text-base text-neutral-gray-medium">
                               {bundle.servicesCount} خدمة متاحة
                             </p>
                           </div>

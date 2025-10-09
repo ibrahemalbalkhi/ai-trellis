@@ -38,24 +38,24 @@ const caseStudies = [
 
 export default function CaseStudiesSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-neutral-bg-light">
+    <section className="py-12 sm:py-20 lg:py-24 bg-neutral-bg-light">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 lg:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-black mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             نتائج حقيقية، مش وعود
           </h2>
-          <p className="text-xl text-neutral-gray-dark max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-dark max-w-2xl mx-auto">
             شركات سعودية حققت نتائج ملموسة معنا
           </p>
         </motion.div>
 
         {/* Case studies grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {caseStudies.map((study, index) => (
             <motion.div
               key={index}
@@ -65,7 +65,7 @@ export default function CaseStudiesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="relative h-full bg-white rounded-3xl p-8 border-2 border-transparent hover:border-primary/20 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="relative h-full bg-white rounded-3xl p-6 sm:p-8 border-2 border-transparent hover:border-primary/20 transition-all duration-300 shadow-lg hover:shadow-2xl">
                 {/* Industry tag */}
                 <div
                   className={`inline-block px-4 py-2 rounded-full bg-gradient-to-br ${study.gradient} text-white text-sm font-bold mb-6`}
@@ -134,13 +134,13 @@ export default function CaseStudiesSection() {
 
         {/* CTA */}
         <motion.div
-          className="text-center mt-12"
+          className="text-center mt-8 sm:mt-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <p className="text-lg text-neutral-gray-dark">
+          <p className="text-base sm:text-lg text-neutral-gray-dark">
             هل تريد نتائج مثل هذه لشركتك؟
           </p>
         </motion.div>
