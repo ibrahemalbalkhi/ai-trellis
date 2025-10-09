@@ -25,7 +25,7 @@ const whyPoints = [
 
 export default function WhySection() {
   return (
-    <section className="py-12 sm:py-20 lg:py-24 bg-neutral-bg-light">
+    <section className="py-12 sm:py-20 lg:py-24 bg-neutral-lighter">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-8 sm:mb-12 lg:mb-16 text-center"

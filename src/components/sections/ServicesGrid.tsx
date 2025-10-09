@@ -25,7 +25,7 @@ export default function ServicesGrid() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             خدماتنا: 71 حل بالذكاء الاصطناعي
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-neutral-medium max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto" style={{ color: '#374151' }}>
             اضغط على أي حزمة لاستكشاف الخدمات المتاحة
           </p>
         </motion.div>
@@ -84,7 +84,7 @@ export default function ServicesGrid() {
                 </h3>
 
                 {/* Service Count */}
-                <p className="text-sm sm:text-base text-center text-neutral-medium font-medium">
+                <p className="text-sm sm:text-base text-center font-medium" style={{ color: '#374151' }}>
                   {bundle.servicesCount} خدمة
                 </p>
 

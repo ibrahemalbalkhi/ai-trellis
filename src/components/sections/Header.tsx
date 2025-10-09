@@ -29,7 +29,7 @@ export default function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/80 backdrop-blur-lg border-b border-neutral-gray-light shadow-sm"
+          ? "bg-white/80 backdrop-blur-lg border-b border-neutral-light shadow-sm"
           : "bg-transparent"
       )}
       initial={{ y: -100 }}

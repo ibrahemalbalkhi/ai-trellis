@@ -26,7 +26,7 @@ export default function BookingSection() {
             جاهز تبدأ؟
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-neutral-dark mb-8 sm:mb-12 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 leading-relaxed" style={{ color: '#1F2937' }}>
             احجز 30 دقيقة مجاناً. راح نفهم احتياجاتك ونقترح الحلول المناسبة
           </p>
 

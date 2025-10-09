@@ -43,7 +43,7 @@ export default function HowWeWorkSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             ما نكتفي بالكلام
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-neutral-dark max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto" style={{ color: '#1F2937' }}>
             نبني، ننفذ، ونتابع. هذي طريقة شغلنا
           </p>
         </motion.div>
@@ -83,7 +83,7 @@ export default function HowWeWorkSection() {
                       size={24}
                     />
                   </div>
-                  <p className="text-base sm:text-lg text-neutral-dark leading-relaxed">
+                  <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#1F2937' }}>
                     {step.description}
                   </p>
                 </div>
