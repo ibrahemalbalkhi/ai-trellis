@@ -31,7 +31,7 @@ export default function ImplementationSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             ما نستشير بس، احنا ننفذ
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-dark max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-dark max-w-3xl mx-auto">
             الفرق بيننا وبين الاستشاريين التقليديين
           </p>
         </motion.div>
@@ -46,9 +46,9 @@ export default function ImplementationSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="bg-neutral-bg-light rounded-3xl p-6 sm:p-8 border-2 border-neutral-gray-light relative">
+            <div className="bg-neutral-lighter rounded-3xl p-6 sm:p-8 border-2 border-neutral-light relative">
               {/* Label */}
-              <div className="absolute -top-4 right-8 bg-neutral-gray-medium text-white px-4 py-2 rounded-full text-sm font-bold">
+              <div className="absolute -top-4 right-8 bg-neutral-medium text-white px-4 py-2 rounded-full text-sm font-bold">
                 الاستشاريون التقليديون
               </div>
 
@@ -57,7 +57,7 @@ export default function ImplementationSection() {
                 {comparison.consulting.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 text-neutral-gray-dark"
+                    className="flex items-center gap-3 text-neutral-dark"
                   >
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center">
                       <X size={16} className="text-red-500" />
@@ -68,8 +68,8 @@ export default function ImplementationSection() {
               </div>
 
               {/* Bottom note */}
-              <div className="mt-6 pt-6 border-t border-neutral-gray-light">
-                <p className="text-sm text-neutral-gray-medium italic">
+              <div className="mt-6 pt-6 border-t border-neutral-light">
+                <p className="text-sm text-neutral-medium italic">
                   &quot;نعطيك خطة، وأنت تنفذها بنفسك&quot;
                 </p>
               </div>
@@ -132,7 +132,7 @@ export default function ImplementationSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
         >
-          <div className="inline-block bg-gradient-to-br from-neutral-bg-light to-white rounded-2xl px-6 sm:px-8 py-4 sm:py-6 border border-neutral-gray-light shadow-lg">
+          <div className="inline-block bg-gradient-to-br from-neutral-lighter to-white rounded-2xl px-6 sm:px-8 py-4 sm:py-6 border border-neutral-light shadow-lg">
             <p className="text-base sm:text-lg font-semibold text-neutral-black">
               ما نعطيك تقرير وننساك. نشتغل معك لين تحقق النتائج
             </p>

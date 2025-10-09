@@ -43,7 +43,7 @@ export default function HowWeWorkSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             ما نكتفي بالكلام
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-dark max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-dark max-w-2xl mx-auto">
             نبني، ننفذ، ونتابع. هذي طريقة شغلنا
           </p>
         </motion.div>
@@ -73,7 +73,7 @@ export default function HowWeWorkSection() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-gradient-to-br from-neutral-bg-light to-white rounded-2xl p-4 sm:p-6 lg:p-8 border border-neutral-gray-light/50">
+                <div className="flex-1 bg-gradient-to-br from-neutral-lighter to-white rounded-2xl p-4 sm:p-6 lg:p-8 border border-neutral-light/50">
                   <div className="flex items-start justify-between gap-4 mb-2 sm:mb-3">
                     <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-neutral-black">
                       {step.title}
@@ -83,7 +83,7 @@ export default function HowWeWorkSection() {
                       size={24}
                     />
                   </div>
-                  <p className="text-base sm:text-lg text-neutral-gray-dark leading-relaxed">
+                  <p className="text-base sm:text-lg text-neutral-dark leading-relaxed">
                     {step.description}
                   </p>
                 </div>

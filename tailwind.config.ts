@@ -29,10 +29,10 @@ const config: Config = {
         // Neutral colors - WCAG AAA compliant
         neutral: {
           black: "#0F172A",
-          "gray-dark": "#1F2937",    // 12.63:1 contrast on white
-          "gray-medium": "#374151",  // 8.59:1 contrast on white
-          "gray-light": "#9CA3AF",   // For borders only
-          "bg-light": "#F9FAFB",
+          dark: "#1F2937",      // 12.63:1 contrast on white - WCAG AAA
+          medium: "#374151",    // 8.59:1 contrast on white - WCAG AAA
+          light: "#9CA3AF",     // For borders and subtle text
+          lighter: "#F9FAFB",   // For backgrounds
         },
       },
       fontFamily: {

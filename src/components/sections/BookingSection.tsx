@@ -12,7 +12,7 @@ export default function BookingSection() {
 
   return (
     <section
-      className="py-12 sm:py-20 lg:py-24 bg-neutral-bg-light"
+      className="py-12 sm:py-20 lg:py-24 bg-neutral-lighter"
       id="booking"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,18 +26,18 @@ export default function BookingSection() {
             جاهز تبدأ؟
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-dark mb-8 sm:mb-12 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-dark mb-8 sm:mb-12 leading-relaxed">
             احجز 30 دقيقة مجاناً. راح نفهم احتياجاتك ونقترح الحلول المناسبة
           </p>
 
           {/* Calendly Placeholder */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg mb-8 border-2 border-dashed border-neutral-gray-light">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg mb-8 border-2 border-dashed border-neutral-light">
             <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[350px] lg:h-96">
               <div className="text-5xl sm:text-6xl mb-4 sm:mb-6 opacity-30">📅</div>
-              <p className="text-lg sm:text-xl text-neutral-gray-medium font-medium mb-2">
+              <p className="text-lg sm:text-xl text-neutral-medium font-medium mb-2">
                 مساحة حجز التقويم
               </p>
-              <p className="text-sm sm:text-base text-neutral-gray-medium text-center max-w-md">
+              <p className="text-sm sm:text-base text-neutral-medium text-center max-w-md">
                 {/* Calendly أو أي نظام حجز آخر يتم إضافته هنا */}
                 سيتم إضافة أداة الحجز (Calendly أو غيرها) في هذا المكان
               </p>
@@ -46,7 +46,7 @@ export default function BookingSection() {
 
           {/* Alternative Contact */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-            <p className="text-base sm:text-lg text-neutral-gray-dark">
+            <p className="text-base sm:text-lg text-neutral-dark">
               أو تواصل معنا مباشرة:
             </p>
             <button

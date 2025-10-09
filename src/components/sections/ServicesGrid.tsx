@@ -25,7 +25,7 @@ export default function ServicesGrid() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             خدماتنا: 71 حل بالذكاء الاصطناعي
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-medium max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-medium max-w-2xl mx-auto">
             اضغط على أي حزمة لاستكشاف الخدمات المتاحة
           </p>
         </motion.div>
@@ -48,7 +48,7 @@ export default function ServicesGrid() {
                            ${
                              expandedBundle === bundle.id
                                ? "border-transparent shadow-2xl"
-                               : "border-neutral-gray-light hover:border-neutral-gray-medium hover:shadow-lg"
+                               : "border-neutral-light hover:border-neutral-medium hover:shadow-lg"
                            }`}
                 style={{
                   backgroundColor:
@@ -84,13 +84,13 @@ export default function ServicesGrid() {
                 </h3>
 
                 {/* Service Count */}
-                <p className="text-sm sm:text-base text-center text-neutral-gray-medium font-medium">
+                <p className="text-sm sm:text-base text-center text-neutral-medium font-medium">
                   {bundle.servicesCount} خدمة
                 </p>
 
                 {/* Expand indicator */}
                 {!expandedBundle && (
-                  <p className="text-center text-sm text-neutral-gray-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <p className="text-center text-sm text-neutral-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
                     اضغط للعرض
                   </p>
                 )}
@@ -134,14 +134,14 @@ export default function ServicesGrid() {
                             >
                               {bundle.nameAr}
                             </h3>
-                            <p className="text-sm sm:text-base text-neutral-gray-medium">
+                            <p className="text-sm sm:text-base text-neutral-medium">
                               {bundle.servicesCount} خدمة متاحة
                             </p>
                           </div>
                         </div>
                         <button
                           onClick={() => setExpandedBundle(null)}
-                          className="p-2 rounded-full hover:bg-neutral-bg-light transition-colors"
+                          className="p-2 rounded-full hover:bg-neutral-lighter transition-colors"
                           aria-label="إغلاق"
                         >
                           <X size={24} />
@@ -153,7 +153,7 @@ export default function ServicesGrid() {
                         {bundle.services.map((service, idx) => (
                           <motion.div
                             key={idx}
-                            className="p-4 rounded-xl bg-neutral-bg-light hover:bg-neutral-gray-light/30 transition-colors"
+                            className="p-4 rounded-xl bg-neutral-lighter hover:bg-neutral-light/30 transition-colors"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: idx * 0.03 }}
@@ -163,7 +163,7 @@ export default function ServicesGrid() {
                                 <h4 className="font-bold text-neutral-black mb-1">
                                   {service.nameAr}
                                 </h4>
-                                <p className="text-sm text-neutral-gray-medium">
+                                <p className="text-sm text-neutral-medium">
                                   {service.categoryAr}
                                 </p>
                               </div>

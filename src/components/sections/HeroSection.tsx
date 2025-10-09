@@ -22,9 +22,9 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Abstract Floating Elements */}
+      {/* Abstract Floating Elements - Behind content */}
       <motion.div
-        className="absolute top-20 right-10 w-64 h-64 sm:w-96 sm:h-96 opacity-40"
+        className="absolute top-20 right-10 w-64 h-64 sm:w-96 sm:h-96 opacity-40 z-0"
         animate={{
           y: [0, -20, 0],
           rotate: [0, 5, 0],
@@ -44,7 +44,7 @@ export default function HeroSection() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-20 left-10 w-48 h-48 sm:w-72 sm:h-72 opacity-30"
+        className="absolute bottom-20 left-10 w-48 h-48 sm:w-72 sm:h-72 opacity-30 z-0"
         animate={{
           y: [0, 15, 0],
           rotate: [0, -5, 0],
@@ -64,7 +64,7 @@ export default function HeroSection() {
       </motion.div>
 
       <motion.div
-        className="absolute top-1/3 left-1/4 w-40 h-40 sm:w-56 sm:h-56 opacity-20"
+        className="absolute top-1/3 left-1/4 w-40 h-40 sm:w-56 sm:h-56 opacity-20 z-0"
         animate={{
           y: [0, -15, 0],
           x: [0, 10, 0],

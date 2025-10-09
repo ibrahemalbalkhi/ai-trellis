@@ -38,7 +38,7 @@ const caseStudies = [
 
 export default function CaseStudiesSection() {
   return (
-    <section className="py-12 sm:py-20 lg:py-24 bg-neutral-bg-light">
+    <section className="py-12 sm:py-20 lg:py-24 bg-neutral-lighter">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-8 sm:mb-12 lg:mb-16"
@@ -49,7 +49,7 @@ export default function CaseStudiesSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-neutral-black mb-3 sm:mb-4">
             نتائج حقيقية، مش وعود
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-neutral-gray-dark max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-dark max-w-2xl mx-auto">
             شركات سعودية حققت نتائج ملموسة معنا
           </p>
         </motion.div>
@@ -75,7 +75,7 @@ export default function CaseStudiesSection() {
 
                 {/* Challenge */}
                 <div className="mb-6">
-                  <h3 className="text-sm font-bold text-neutral-gray-medium uppercase tracking-wide mb-2">
+                  <h3 className="text-sm font-bold text-neutral-medium uppercase tracking-wide mb-2">
                     التحدي
                   </h3>
                   <p className="text-lg font-semibold text-neutral-black">
@@ -85,20 +85,20 @@ export default function CaseStudiesSection() {
 
                 {/* Solution */}
                 <div className="mb-6">
-                  <h3 className="text-sm font-bold text-neutral-gray-medium uppercase tracking-wide mb-2">
+                  <h3 className="text-sm font-bold text-neutral-medium uppercase tracking-wide mb-2">
                     الحل
                   </h3>
-                  <p className="text-base text-neutral-gray-dark leading-relaxed">
+                  <p className="text-base text-neutral-dark leading-relaxed">
                     {study.solution}
                   </p>
                 </div>
 
                 {/* Divider */}
-                <div className="h-px bg-neutral-gray-light my-6" />
+                <div className="h-px bg-neutral-light my-6" />
 
                 {/* Results */}
                 <div>
-                  <h3 className="text-sm font-bold text-neutral-gray-medium uppercase tracking-wide mb-4">
+                  <h3 className="text-sm font-bold text-neutral-medium uppercase tracking-wide mb-4">
                     النتائج
                   </h3>
                   <div className="space-y-3">
@@ -107,7 +107,7 @@ export default function CaseStudiesSection() {
                         key={idx}
                         className="flex items-center justify-between"
                       >
-                        <span className="text-sm text-neutral-gray-dark">
+                        <span className="text-sm text-neutral-dark">
                           {result.label}
                         </span>
                         <span
@@ -124,7 +124,7 @@ export default function CaseStudiesSection() {
                 <div className="absolute top-6 left-6 opacity-0 group-hover:opacity-100 transition-opacity">
                   <ArrowUpRight
                     size={24}
-                    className="text-neutral-gray-light"
+                    className="text-neutral-light"
                   />
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function CaseStudiesSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <p className="text-base sm:text-lg text-neutral-gray-dark">
+          <p className="text-base sm:text-lg text-neutral-dark">
             هل تريد نتائج مثل هذه لشركتك؟
           </p>
         </motion.div>
